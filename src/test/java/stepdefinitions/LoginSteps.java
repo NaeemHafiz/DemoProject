@@ -18,7 +18,7 @@ public class LoginSteps {
 
     @Then("User should be navigated to the dashboard")
     public void user_should_be_navigated_to_the_dashboard() {
-        System.out.println("User should be navigated to the dashboard");
+        System.out.println("User should be navigated to the dashboard Grok");
     }
 
 }
