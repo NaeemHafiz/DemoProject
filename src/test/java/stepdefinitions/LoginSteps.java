@@ -6,19 +6,31 @@ import io.cucumber.java.en.When;
 
 public class LoginSteps {
 
-    @Given("User is on login page")
-    public void user_is_on_login_page() {
-        System.out.println("User is on login page");
+
+    @Given("the user is on the login page")
+    public void the_user_is_on_the_login_page() {
+        System.out.println("Print the user is on the login page");
     }
 
-    @When("User enters valid username and password")
-    public void user_enters_valid_username_and_password() {
-        System.out.println("User enters valid username and password");
+    @When("the user enters valid credentials")
+    public void the_user_enters_valid_credentials() {
+        System.out.println("Print the user enters valid credentials");
     }
 
-    @Then("User should be navigated to the dashboard")
-    public void user_should_be_navigated_to_the_dashboard() {
-        System.out.println("User should be navigated to the dashboard Grok");
+    @When("the user enters invalid credentials")
+    public void the_user_enters_invalid_credentials() {
+        System.out.println("Print the user enters invalid credentials");
     }
+
+    @Then("the user should be redirected to the dashboard")
+    public void the_user_should_be_redirected_to_the_dashboard() {
+        System.out.println("Print the user should be redirected to the dashboard");
+    }
+
+    @Then("an error message should be displayed")
+    public void an_error_message_should_be_displayed() {
+        System.out.println("Print an error message should be displayed");
+    }
+
 
 }

@@ -1,6 +1,12 @@
 Feature: Login Feature
 
-  Scenario: Successful login with valid credentials
-    Given User is on login page
-    When User enters valid username and password
-    Then User should be navigated to the dashboard
+  Background:
+    Given the user is on the login page
+
+  Scenario: Successful login
+    When the user enters valid credentials
+    Then the user should be redirected to the dashboard
+
+  Scenario: Unsuccessful login
+    When the user enters invalid credentials
+    Then an error message should be displayed
